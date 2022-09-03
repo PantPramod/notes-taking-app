@@ -1,0 +1,151 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.file{
+    text-decoration: none;
+    background: rgba(233, 228, 228, 0.322);
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-basis:  calc(100% / 4);
+    max-width: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.file p{
+    margin-top: 10px;
+}
+
+.file:hover{
+  transform: scale(1.1);
+}
+
+.create{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: white;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgb(247, 95, 95), rgb(43, 43, 240));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create:hover{
+   transform: scale(1.1);
+   background: linear-gradient(45deg, rgb(236, 27, 27), rgb(7, 7, 233));
+ 
+  }
+
+  .showbox{
+    background-color: rgb(247, 233, 233);
+    border-radius: 13px;
+    padding: 20px;
+    position: fixed;
+    color: rgb(12, 7, 7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-250px, -100px);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+   
+  .showbox p{
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .showbox div{
+    display: flex;
+    align-items: center;
+  }
+
+  .showbox input{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    outline: none;    
+  }
+  .showbox button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: rgba(155, 91, 13, 0.849);
+    color: white;
+    display: block;
+    margin: 20px auto 0 auto;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close{
+    /* border: 1px solid white; */
+    position: relative;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    /* right: 20px; */
+  }
+
+  .del{
+    /* text-align: right; */
+    /* align-self: right; */
+    margin-left: auto;
+    display: block;
+  }
+
+  .del{
+   color: rgb(182, 24, 84);
+   transition: 0.3s;
+  }
+
+  .del:hover{
+    transform: scale(1.1); 
+    color: rgb(107, 20, 20);
+ 
+  }
+
+  @media (max-width:768px){
+    .showbox{
+      background-color: rgb(247, 233, 233);
+      border-radius: 13px;
+      padding: 20px;
+      position: fixed;
+      color: rgb(12, 7, 7);
+      top: 50%;
+      left: unset;
+      transform: unset;
+      transform: translate(2.5%,  -101px );
+      width: 95%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      
+    }
+
+    .content{
+      align-items: center;
+      justify-content: center;
+    }
+    .file{
+      margin-left: 20px;
+      margin-right: 20px;
+      flex-basis:  calc(100% );
+    }
+  }

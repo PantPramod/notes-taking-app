@@ -1,0 +1,32 @@
+.myfile{
+
+}
+
+.myfile h1{
+    text-align:  center;
+    background: linear-gradient(34deg, rgb(238, 7, 7), rgb(8, 230, 8));
+    color: white;
+    padding: 20px;
+}
+
+.content{
+    max-width: 1000px;
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin: auto;
+    font-size: 25px;
+    word-wrap: break-word;
+
+}
+
+.edit{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    border-radius: 14px;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(25deg, rgb(77, 13, 13), rgb(112, 58, 22));
+    text-decoration: none;
+}

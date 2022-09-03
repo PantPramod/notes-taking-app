@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.editfile{
+  
+}
+
+.editfile h1{
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(245, 81, 81), blue);
+    color: white;
+    text-align: center; 
+}
+
+.content{
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content textarea{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: calc(100vh - 77px - 45px);
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+.save{
+    border: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg , rgb(40, 180, 40), rgb(91, 91, 240));
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.save:hover{
+    transform: scale(1.1);
+    
+    background: linear-gradient(45deg , rgb(22, 231, 22), rgb(54, 54, 231));
+}
